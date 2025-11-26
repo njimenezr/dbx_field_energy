@@ -1,0 +1,14 @@
+resources:
+  apps:
+    {{.app_name}}:
+      # Currently missing the capability to 
+      name: {{.app_name}}
+      description: 'An app which allows for interaction and well planning functionality'
+      # The location of the source code for the app
+      source_code_path: ../03-drill_job_planning_app/
+      resources:
+        - name: "sql-warehouse"
+          description: "A sql warehouse for app to be able to run"
+          sql_warehouse:
+            id: {{.warehouse_id}}
+            permission: "CAN_USE"

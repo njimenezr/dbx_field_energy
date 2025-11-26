@@ -1,0 +1,12 @@
+{
+    "project_name": "field-energy-drill-plan-demo",
+    "environment_name": "common_demo",
+    "workspace_host": "https://dbc-c20c137b-a83d.cloud.databricks.com/",
+    "schema": "drilling",
+    "catalog": "og_demo",
+    "app_name": "drill-job-planning-tool-demo",
+    "warehouse_id": "cbdc34bf4ea96f36",
+    "instance_type": "i3.xlarge",
+    "pipeline_name": "field-energy-streaming-pipeline",
+    "root_path": "/Users/${workspace.current_user.userName}/${bundle.name}"
+}

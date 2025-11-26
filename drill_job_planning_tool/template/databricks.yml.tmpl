@@ -1,0 +1,31 @@
+bundle:
+  name: "{{.project_name}}"
+
+variables:
+  instance_type:
+    description: Instance type for deploying across clouds.
+    default: {{.instance_type}}
+  catalog:
+    description: Catalog to be created and assets to be deployed to
+    default: {{.catalog}}
+  schema:
+    description: Schema to be created and assets to be deployed to
+    default: {{.schema}}
+  warehouse_id:
+    description: id of sql warehouse for deployed agent
+    default: {{.warehouse_id}}
+  app_name:
+    description: the name of the app to be deployed
+    default: {{.app_name}}
+  pipeline_name:
+    description: the name of the pipeline to be deployed
+    default: {{.pipeline_name}}
+
+include:
+  - ./dabs_configs/*.yml
+
+targets:
+  {{.environment_name}}:
+    workspace:
+      host: {{.workspace_host}}
+      root_path: {{.root_path}}

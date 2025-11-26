@@ -1,0 +1,43 @@
+command: [
+  "streamlit", 
+  "run",
+  "app.py"
+]
+
+env:
+  - name: "DATABRICKS_WAREHOUSE_ID"
+    value: 24eb93f806723d3f
+
+  # defaults
+  - name: DATABRICKS_CATALOG
+    value: og_demo_workshop
+  - name: DATABRICKS_SCHEMA
+    value: drilling
+
+  - name: ASSISTANT_MODEL
+    value: databricks-meta-llama-3-1-8b-instruct
+
+  - name: APP_TITLE
+    value: "HillDrill, Inc."
+
+  # common_demo
+  - name: "DATABRICKS_CATALOG_482c13f7-ec9d-48e6-ad05-563cca81a8b1"
+    value: og_demo
+  - name: "DATABRICKS_SCHEMA_482c13f7-ec9d-48e6-ad05-563cca81a8b1"
+    value: drilling
+  - name: "OPENAI_API_KEY_a99e46bc-dc54-4efa-abd8-ff27492f6f03"
+    value: ""
+  - name: "LAKEBASE_INSTANCE_NAME_a99e46bc-dc54-4efa-abd8-ff27492f6f03"
+    value: "drillingdb"
+  - name: "LAKEBASE_HOST_a99e46bc-dc54-4efa-abd8-ff27492f6f03"
+    value: "instance-76aadc6c-6a85-47f2-9ebd-05cf5f934df6.database.cloud.databricks.com"
+  - name: "LAKEBASE_PORT_a99e46bc-dc54-4efa-abd8-ff27492f6f03"
+    value: 5432
+  - name: "LAKEBASE_DATABASE_a99e46bc-dc54-4efa-abd8-ff27492f6f03"
+    value: "databricks_postgres"
+  - name: "LAKEBASE_SYNC_DATABASE_a99e46bc-dc54-4efa-abd8-ff27492f6f03"
+    value: "og_demo"
+  - name: "LAKEBASE_SYNC_SCHEMA_a99e46bc-dc54-4efa-abd8-ff27492f6f03"
+    value: "drilling"
+  - name: "LAKEBASE_SYNC_JOB_DATA_TABLE_a99e46bc-dc54-4efa-abd8-ff27492f6f03"
+    value: "drill_job_summary_gold_sync"

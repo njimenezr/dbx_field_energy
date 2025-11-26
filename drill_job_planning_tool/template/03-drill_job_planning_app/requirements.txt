@@ -1,0 +1,17 @@
+gradio==5.0
+streamlit==1.46.1
+streamlit-extras==0.6.0
+streamlit-float==0.3.5
+databricks-sdk==0.57.0
+databricks-sql-connector==4.0.5
+python-dotenv==1.1.1
+openai==1.97.0
+psycopg2-binary==2.9.10
+
+
+databricks-langchain==0.6.0
+langchain==0.3.27
+langgraph==0.6.4
+langchain-core==0.3.74
+langchain-community==0.3.27
+langchain-openai==0.3.29

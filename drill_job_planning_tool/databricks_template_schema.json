@@ -1,0 +1,65 @@
+{
+  "properties": {
+    "project_name": {
+      "type": "string",
+      "default": "field-energy-drilling-well-planner",
+      "description": "What is the name of the bundle you want to create?",
+      "order": 1
+    },
+    "environment_name": {
+      "type": "string",
+      "default": "common_demo",
+      "description": "What is the name of your deployment target?",
+      "order": 2
+    }, 
+    "workspace_host": {
+      "type": "string",
+      "default": "https://e2-demo-field-eng.cloud.databricks.com",
+      "description": "What is the databricks host URL?",
+      "order": 3
+    },   
+    "schema": {
+      "type": "string",
+      "default": "drilling",
+      "description": "To what schema should this deploy?",
+      "order": 4
+    },
+    "catalog": {
+      "type": "string",
+      "default": "og_demo",
+      "description": "To what catalog should this deploy?",
+      "order": 5
+    },
+    "app_name": {
+      "type": "string",
+      "default": "drill-job-planning-tool-demo",
+      "description": "What should the name of the app be?",
+      "order": 6
+    },
+    "warehouse_id": {
+      "type": "string",
+      "default": "30d6e63b35f828c5",
+      "description": "What is the warehouse ID to use?",
+      "order": 7
+    },
+    "instance_type": {
+      "type": "string",
+      "default": "i3.xlarge",
+      "description": "What is the instance type to use?",
+      "order": 8
+    },
+    "pipeline_name": {
+      "type": "string",
+      "default": "field-energy-streaming-pipeline",
+      "description": "What should the pipeline be named?",
+      "order": 9
+    },
+    "root_path": {
+      "type": "string",
+      "default": "/Users/${workspace.current_user.userName}/${bundle.name}",
+      "description": "To what root path ought this be deployed to?",
+      "order": 10
+    }
+  },
+  "success_message": "\nYour bundle `{{.project_name}} has been created."
+}
