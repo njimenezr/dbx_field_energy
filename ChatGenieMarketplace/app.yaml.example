@@ -1,0 +1,32 @@
+command:
+- "python"
+- "app.py"
+
+# Environment Variables Configuration
+# Replace the values below with your own Databricks configuration
+# See ENVIRONMENT_VARIABLES.md for detailed instructions on how to obtain these values
+
+env:
+# Required: Your Databricks service token (Personal Access Token or Service Principal Token)
+# Get it from: User Settings → Access Tokens → Generate New Token
+- name: "DATABRICKS_SERVICE_TOKEN"
+  value: "YOUR_DATABRICKS_TOKEN_HERE"
+
+# Required: Your Databricks workspace host
+# Format: adb-{workspace-id}.{deployment-number}.azuredatabricks.net
+# Example: adb-984752964297111.11.azuredatabricks.net
+- name: "DATABRICKS_HOST"
+  value: "YOUR_DATABRICKS_HOST_HERE"
+
+# Required: Your Genie Space ID
+# Find it in your Genie Space URL or configuration
+# Example: 01f0b5d1fb9c1a6195e96c5a74c6c78b
+- name: "GENIE_SPACE"
+  value: "YOUR_GENIE_SPACE_ID_HERE"
+
+# Optional: Serving endpoint name for insights generation
+# Find it in: Serving Endpoints → Your endpoint name
+# Example: databricks-gpt-5
+- name: "SERVING_ENDPOINT_NAME"
+  value: "YOUR_SERVING_ENDPOINT_NAME_HERE"
+

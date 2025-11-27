@@ -1,0 +1,14 @@
+command:
+- "streamlit"
+- "run"
+- "app.py"
+
+env:
+- name: "DATABRICKS_SERVICE_TOKEN"
+  value: "SERVICETOKE"
+- name: "DATABRICKS_HOST"
+  value: "HOSTSINHTTP"
+- name: "GENIE_SPACE"
+  value: "GENIESPACEID"
+- name: "SERVING_ENDPOINT_NAME"
+  value: "ENDPOINTNAME"
